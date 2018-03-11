@@ -4,14 +4,38 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
-		.container0{position: absolute;background-color: blue;}
-		.container0{top: 0;left:0;right: 0;bottom: 50%;}
-		.container1{position: absolute;background-color: pink;}
-		.container1{top:50%;left: 0;right: 0;bottom: 0;}	
+		.body{border: 1px black solid;background-color: gray;}
+	   
+		.container0{height: 150px;text-align: right;background-color: #999;}
+		.container1{height: 500px ;}
+		.container2{height: 420px;}
+		.container0{background-color: blue;}
+		.container1{background-color: pink;}
+		.container2{background-color: yellow;}
+		.container0{float: left;width:200px;}	
+		.container1{float: left;width: 500px;}
+		.container2{float: left;width: 120px;}
+		
+		.container0, .container1, .container2{margin: 20px;}
+		.container3{height: 80px;width: 80px;background-color: pink;margin: 20px;text-align: center;}
+		.container4{height: 80px;width: 80px;background-color: pink;margin: 20px;}
+		.clearfix:after{content: ".";display: block;clear: both;height: 0;overflow: hidden;visibility: hidden;}
 	</style>
 </head>
 <body>
-	<div class="container0">container0</div>
-	<div class="container1">container1</div>
+ 	<div class="body">
+ 		<div class="clearfix">
+			<div class="container0">container0
+				<div class="container3">团队logo 80×80</div>
+			</div>
+			<div class="container1">container1</div>
+			<div class="container2">
+				<div class="container4">个人logo 80×80</div>
+				<div class="container4">个人logo 80×80</div>
+				<div class="container4">个人logo 80×80</div>
+				<div class="container4">个人logo 80×80</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
