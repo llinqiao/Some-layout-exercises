@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.body{border: 2px red solid;background-color: gray;padding: 20px;}
+		.content{height: 400px;width: 100%;float: left;background-color: gray;}
+		.container1{margin: 0 140px 0 220px;height: 400px;background-color: white;}
+		.container0{height: 120px;width: 200px;float: left;background-color: white;}
+		.container2{height: 420px;width: 120px;float: left;background-color: white;}
+		.container0{margin-left: -100%;}
+		.container2{margin-left: -120px;}
+
+		.container3{height: 80px;width: 80px;background-color: gray;margin: 20px;}
+		.container4{display: inline-block;font-weight: bold;line-height: 20px;margin: 20px 0 0 116px;}
+		.container5{height: 80px;width: 80px;background-color: gray;font-weight: bold;line-height: 20px;text-align: center;margin:-20px 0 20px 20px;}
+		.clearfix:after{content: ".";display: block;clear:both;height: 0;overflow: hidden;visibility: hidden;}
+		
+		p{font-weight: bold;line-height: 20px;margin: 0;line-height: 20px;text-align: center;padding: 20px 0;}
+	</style>
+</head>
+<body>
+<div class="body">
+	<div class="clearfix">
+		<div class="content">
+			<div class="container1"></div>
+		</div>
+		<div class="container0">
+			<div class="container4">团队名称</div>
+			<div class="container5">
+				<p>团队logo 80×80</p>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="container3"><P>个人logo 80×80</P></div>
+			<div class="container3"><P>个人logo 80×80</P></div>
+			<div class="container3"><P>个人logo 80×80</P></div>
+			<div class="container3"><P>个人logo 80×80</P></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
