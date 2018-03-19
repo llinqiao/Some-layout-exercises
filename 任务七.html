@@ -4,10 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
-		 body{margin: 0;}
-		.top{width: 1280px;height: 57px;}
-		.topcontent{display: inline-block;width: 45px;height: 53px;margin-left: 14px;margin-top: 13px;}
-		.content1{width: 1280px;height: 691px;background-color: red;}
+		 img,body,head,div,span,ul,a{margin: 0;padding: 0;}
+		.top{position: relative;width: 1280px;height: 57px;}
+		.img1{display: block;position: absolute;top: 13px;left: 56px;}
+		.span1{position: absolute;font-size: 21px;color: black;top: 19px;left: 100px;}
+		.img2{position: absolute;bottom: 24px;right: 105px;}
+		ul{display: inline-block;position: absolute;text-align: right;right: 44px;bottom: 24px;}
+		li{display: inline-block;margin: 0 23px;}
+		.a1{font-size: 14px;color: gray;}
+		.top2{position: absolute;width: 64px;height: 5px;background-color: red;bottom: 0;right: 560px;}
+		.cur1{color: red;}
+
+		.content1{position: relative;width: 1280px;height: 691px;}
+		.img3{display: block;top: 57px;left: 0;}
+		.mask{position: fixed;top: 57px;left: 0;z-index: 999;width: 1280px;height: 691px;}
+		.span2{display: inline-block;position: absolute;font-size: 60px;color: white;top: 271px;left: 117px}
+		.content11{width: 300px;height: 53px;position: absolute;left: 125px;top: 371px;}
+		.content12{width: 330px;height: 63px;position: absolute;left: 126px;top: 429px;background-color: #e74f4d;}
+		.span3{font-size: 21px;color: white;line-height: 16px;}
+		.span4{font-size: 30px;color: white;position: absolute;top: 440px;left: 225px;}
+
 		.content2{width: 1280px;height: 250px;}
 		.content3{width: 1280px;height: 360px;background-color: black;}
 		.content4{width: 1280px;height: 340px;}
@@ -18,16 +34,35 @@
 		.content9{width: 1280px;height: 450px;background-color: blue;}
 		.content10{width: 1280px;height: 360px;}
 		.bottom{width: 1280px;height: 57px;background-color: black;}
+
 	</style>
 </head>
 <body>
 	<div class="top">
-		<div class=".topcontent">
-			<img src="C:\Users\asus\Desktop\photo.png">
-		</div>
-
+			<img class="img1" src="C:\Users\asus\Desktop\任务七图片\photo.png">
+			<span class="span1">新世界</span>
+			<img class="img2" src="C:\Users\asus\Desktop\任务七图片\photo2.png">
+			<ul>
+				<li class="cur">首页</li>
+				<li><a class="a1">最新活动</a></li>
+				<li><a class="a1">项目介绍</a></li>
+				<li><a class="a1">爱心社区</a></li>
+				<li><a class="a1">关于我们</a></li>
+				<li class="cur1">登陆</li>
+			</ul>
+			<div class="top2">
+			</div>
 	</div>
-	<div class="content1"></div>
+	
+	<div class="content1">
+		<img class="img3" src="C:\Users\asus\Desktop\任务七图片\photo3.png">
+		<span class="span2">Time of new life</span>
+		<div class="content11"><span class="span3">新时代，年轻的人们让我们一起体验新生活，享受新生活</span></div>
+		<div class="content12"></div>
+		<span class="span4">开始体验</span>
+		<div class="mask"></div>
+	</div>
+
 	<div class="content2"></div>
 	<div class="content3"></div>
 	<div class="content4"></div>
